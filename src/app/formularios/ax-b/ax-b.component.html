@@ -1,0 +1,22 @@
+<div class="card">
+  <h2>Multiplicación usando sumas repetidas</h2>
+
+  <form [formGroup]="formulario" (ngSubmit)="showFinal()">
+    <label>
+      Valor de A:
+      <input type="number" formControlName="a" min="0" />
+    </label>
+
+    <label>
+      Valor de B:
+      <input type="number" formControlName="b" min="0" />
+    </label>
+
+    <button type="submit" onclick="showFinal()">Calcular</button>
+  </form>
+
+  <div>
+    <h3>Resultado:</h3>
+    <p>{{ detalle }}</p>
+  </div>
+</div>
