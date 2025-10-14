@@ -15,17 +15,18 @@ export class DistanciaComponent {
 
   ngOnInit(): void{
     this.formulario = new FormGroup({
-      n1: new FormControl(''),
-      n2: new FormControl(''),
-      n3: new FormControl(''),
-      n4: new FormControl(''),
+      x1: new FormControl(''),
+      y1: new FormControl(''),
+      x2: new FormControl(''),
+      y2: new FormControl(''),
     })
   }
   calc(): void{
-    this.objDist.x1= this.formulario.value.n1;
-    this.objDist.x2= this.formulario.value.n2;
-    this.objDist.y1= this.formulario.value.n3;
-    this.objDist.y2= this.formulario.value.n4;
+    this.objDist.x1= this.formulario.value.x1;
+    this.objDist.y1= this.formulario.value.y1;
+    this.objDist.x2= this.formulario.value.x2;
+    this.objDist.y2= this.formulario.value.y2;
+    console.log(this.objDist.x1);
     this.objDist.multiplicaDist();
     this.resultado = this.objDist.resultado;
   }
