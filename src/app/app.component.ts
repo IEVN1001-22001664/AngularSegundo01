@@ -11,10 +11,11 @@ import { EditarComponent } from './utl/editar/editar.component';
 import { EliminarComponent } from './utl/eliminar/eliminar.component';
 import { SignInComponent } from './auth/features/sign-in/sign-in.component';
 import { SignUpComponent } from './auth/features/sign-up/sign-up.component';
+import { ZodiacoComponent } from './formularios/zodiaco/zodiaco.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, DistanciaComponent, MultiplicacionComponent, AxBComponent, NavbarComponent],
+  imports: [RouterOutlet, DistanciaComponent, MultiplicacionComponent, AxBComponent, NavbarComponent, ZodiacoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
